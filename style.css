@@ -22,6 +22,13 @@ header {
 	font-weight: 600;
 }
 
+.hero {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+
 .galleri,
 .intro {
 	margin-bottom: 50px;
@@ -35,7 +42,7 @@ header {
 .galleri,
 .video {
 	box-shadow: 7px 7px 1px rgb(0, 0, 0, 0.1), -10px -10px 12px #d08d8d;
-	padding: 1px 10px 10px 10px;
+	padding: 15px 10px;
 	background-color: var(--dark);
 }
 
@@ -57,7 +64,7 @@ header {
 .galleri1 {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	gap: 15px;
+	gap: 10px;
 }
 
 #billede_2,

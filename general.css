@@ -6,9 +6,11 @@
 	--lilla: #806f6f;
 }
 
-body {
+* {
 	padding: 0;
 	margin: 0;
+}
+body {
 	text-decoration: none;
 	background-color: var(--brun);
 }
@@ -31,6 +33,18 @@ html {
 	color: var(--green);
 	font-family: "Roboto", serif;
 	line-height: 1.5rem;
+}
+
+h1 {
+	color: white;
+}
+h2 {
+	margin: 0 0 15px 0;
+	line-height: 2rem;
+}
+h3 {
+	margin: -10px 0 10px 0;
+	line-height: 1.7rem;
 }
 
 a {
