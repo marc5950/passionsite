@@ -1,9 +1,9 @@
 header {
-	height: 400px;
-	background-color: blueviolet;
-	@media (min-width: 600px) {
+	height: 60vh;
+	background-color: var(--red);
+	/* @media (min-width: 600px) {
 		height: 100vh;
-	}
+	} */
 }
 
 .menu {
@@ -11,21 +11,35 @@ header {
 	align-items: center;
 	justify-content: space-around;
 	padding: 15px 0;
-	margin: 15px;
-	background-color: brown;
+	margin: 10px 15px;
+	background-color: var(--lilla);
 	border-radius: 10px;
 	position: fixed;
 	top: 0;
 	left: 0;
-	width: calc(100% - 28px);
+	width: calc(100% - 31px);
+	color: white;
+	font-weight: 600;
 }
 
 .galleri,
 .intro {
 	margin-bottom: 50px;
 }
+.intro {
+	display: grid;
+	gap: 20px;
+}
 
-@media (min-width: 600px) {
+.intro1,
+.galleri,
+.video {
+	box-shadow: 7px 7px 1px rgb(0, 0, 0, 0.1), -10px -10px 12px #d08d8d;
+	padding: 1px 10px 10px 10px;
+	background-color: var(--dark);
+}
+
+@media (min-width: 900px) {
 	.intro {
 		display: grid;
 		grid-template-columns: 1fr 2fr;
@@ -35,6 +49,9 @@ header {
 
 #billede_1 {
 	border-radius: 5px;
+	box-shadow: 7px 7px 1px rgb(0, 0, 0, 0.1), -10px -10px 12px #d08d8d;
+	height: 100%;
+	object-fit: cover;
 }
 
 .galleri1 {
@@ -53,7 +70,7 @@ header {
 	border-radius: 5px;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 900px) {
 	.galleri1 {
 		grid-template-columns: repeat(3, 1fr);
 	}
@@ -77,13 +94,14 @@ header {
 .video2,
 .video1 {
 	aspect-ratio: 4/2;
+	line-height: 0.5rem;
 }
-
-@media (min-width: 600px) {
-	.video3 {
-		display: grid;
+.video3 {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 10px;
+	@media (min-width: 900px) {
 		grid-template-columns: 1fr 1fr;
-		gap: 20px;
 	}
 }
 
@@ -93,4 +111,9 @@ footer {
 	align-items: center;
 	justify-content: center;
 	text-align: center;
+	background-color: var(--lilla);
+	border-radius: 10px;
+	margin: 10px 15px;
+	color: white;
+	font-weight: 600;
 }

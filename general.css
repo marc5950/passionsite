@@ -1,11 +1,23 @@
+:root {
+	--green: #6eff97;
+	--brun: #dc9696;
+	--red: #ff6e6e;
+	--dark: #82aa8d;
+	--lilla: #806f6f;
+}
+
 body {
 	padding: 0;
 	margin: 0;
 	text-decoration: none;
+	background-color: var(--brun);
 }
 main {
 	margin: 20px;
 	@media (min-width: 600px) {
+		margin: 50px 30px;
+	}
+	@media (min-width: 1070px) {
 		margin: 50px auto;
 		max-width: 1000px;
 	}
@@ -16,10 +28,12 @@ img {
 }
 
 html {
-	color: black;
-	font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+	color: var(--green);
+	font-family: "Roboto", serif;
+	line-height: 1.5rem;
 }
 
-p {
-	font-family: serif;
+a {
+	text-decoration: none;
+	color: white;
 }
