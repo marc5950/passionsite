@@ -1,54 +1,54 @@
 :root {
-  --green: #6eff97;
-  --brun: #dc9696;
-  --red: #ff6e6e;
-  --dark: #82aa8d;
-  --lilla: #806f6f;
+	--green: #6eff97;
+	--brun: #dc9696;
+	--red: #ff6e6e;
+	--dark: #82aa8d;
+	--lilla: #413a3a;
 }
 
 * {
-  padding: 0;
-  margin: 0;
+	padding: 0;
+	margin: 0;
 }
 body {
-  text-decoration: none;
-  background-color: var(--dark);
+	text-decoration: none;
+	background-color: var(--dark);
 }
 main {
-  margin: 20px;
-  @media (min-width: 600px) {
-    margin: 50px 30px;
-  }
-  @media (min-width: 1070px) {
-    margin: 50px auto;
-    max-width: 1000px;
-  }
+	margin: 20px;
+	@media (min-width: 600px) {
+		margin: 50px 30px;
+	}
+	@media (min-width: 1070px) {
+		margin: 50px auto;
+		max-width: 1000px;
+	}
 }
 
 img {
-  width: 100%;
+	width: 100%;
 }
 
 html {
-  color: var(--lilla);
-  font-family: "Roboto", serif;
-  line-height: 1.5rem;
+	color: var(--lilla);
+	font-family: "Roboto", serif;
+	line-height: 1.5rem;
 }
 
 h1 {
-  margin: 0 0 15px 0;
-  line-height: 2rem;
+	margin: 0 0 15px 0;
+	line-height: 2rem;
 }
 h2 {
-  margin: 0 0 15px 0;
-  line-height: 2rem;
+	margin: 0 0 15px 0;
+	line-height: 2rem;
 }
 h3 {
-  margin: -10px 0 10px 0;
-  line-height: 1.7rem;
+	margin: -10px 0 10px 0;
+	line-height: 1.7rem;
 }
 
 a {
-  text-decoration: none;
-  color: white;
+	text-decoration: none;
+	color: white;
 }
