@@ -15,15 +15,27 @@
 	</head>
 	<body>
 		<header>
-			<nav class="menu">
-				<div class="menup">
-					<a href="index.html"><img src="" alt="Logo" /></a>
-				</div>
-				<div class="menup"><a href="index.html">Emmely's Strik</a></div>
+			<div class="menup">
+				<a href="index.html"><img src="billeder/logo.svg" alt="Logo" id="logo" /></a>
+			</div>
+			<div class="menup"><a href="index.html">EMMELYS PASSION</a></div>
+			<nav>
 				<div class="menup">Menu</div>
 			</nav>
-			<div class="hero"><h1>Emmelys Passion</h1></div>
 		</header>
+		<section class="hero">
+			<video id="videohero" autoplay muted loop><source src="passionvideo_utekst.mp4" type="video/mp4" /></video>
+			<script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+			<dotlottie-player
+				src="https://lottie.host/ab7b30b2-05be-41cc-9b3e-4cfe3513a7b4/BIz8HEIMjq.lottie"
+				background="transparent"
+				speed="1"
+				style="width: 100%; height: 100%; max-height: 100vh"
+				loop
+				autoplay
+			></dotlottie-player>
+		</section>
+
 		<main>
 			<div class="intro">
 				<div class="intro1">

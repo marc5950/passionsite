@@ -14,8 +14,10 @@ body {
 	text-decoration: none;
 	background-color: var(--dark);
 }
+
 main {
-	margin: 20px;
+	margin: 40px 20px;
+
 	@media (min-width: 600px) {
 		margin: 50px 30px;
 	}

@@ -1,139 +1,156 @@
 header {
-  height: 60vh;
-  background-color: var(--red);
-  /* @media (min-width: 600px) {
-		height: 100vh;
-	} */
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	height: 60px;
+	margin: 10px 15px;
+	background-color: var(--lilla);
+	border-radius: 10px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: calc(100% - 31px);
+	color: white;
+	font-weight: 600;
+	z-index: 100;
 }
 
-.menu {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  padding: 15px 0;
-  margin: 10px 15px;
-  background-color: var(--lilla);
-  border-radius: 10px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: calc(100% - 31px);
-  color: white;
-  font-weight: 600;
+.menup {
+	height: 100%;
+	align-content: center;
+}
+
+#logo {
+	height: 100%;
 }
 
 .hero {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
+	display: grid;
+	display: grid;
+	align-items: center;
+	height: auto;
+	width: 100%;
+	overflow: hidden;
+}
+
+.hero > * {
+	grid-column: 1;
+	grid-row: 1;
+}
+
+#videohero {
+	width: 100%;
+	max-height: 100vh;
+	object-fit: cover;
+	transform: scale(1.1);
+	filter: blur(5px) opacity(50%);
 }
 
 .galleri,
 .intro {
-  margin-bottom: 50px;
+	margin-bottom: 50px;
 }
 .intro {
-  display: grid;
-  gap: 20px;
+	display: grid;
+	gap: 20px;
 }
 
 .intro1,
 .galleri,
 .video {
-  box-shadow: 7px 7px 1px rgb(0, 0, 0, 0.1), -10px -10px 12px #6b9777;
-  padding: 15px 10px;
-  background-color: var(--brun);
+	box-shadow: 7px 7px 1px rgb(0, 0, 0, 0.1), -10px -10px 12px #6b9777;
+	padding: 15px 10px;
+	background-color: var(--brun);
 }
 
 @media (min-width: 900px) {
-  .intro {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 15px;
-  }
+	.intro {
+		display: grid;
+		grid-template-columns: 1fr 2fr;
+		gap: 15px;
+	}
 }
 
 #billede_1 {
-  border-radius: 5px;
-  box-shadow: 7px 7px 1px rgb(0, 0, 0, 0.1), -10px -10px 12px #6b9777;
-  height: 100%;
-  object-fit: cover;
+	border-radius: 5px;
+	box-shadow: 7px 7px 1px rgb(0, 0, 0, 0.1), -10px -10px 12px #6b9777;
+	height: 100%;
+	object-fit: cover;
 }
 
 .billede1s {
-  display: grid;
-  align-items: center;
-  text-align: center;
-  color: white;
-  font-weight: 600;
-  font-size: 2rem;
+	display: grid;
+	align-items: center;
+	text-align: center;
+	color: white;
+	font-weight: 600;
+	font-size: 2rem;
 }
 .billede1s > * {
-  grid-column: 1;
-  grid-row: 1;
+	grid-column: 1;
+	grid-row: 1;
 }
 
 .galleri1 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 10px;
 }
 
 #billede_2,
 #billede_3,
 #billede_4,
 #billede_5 {
-  aspect-ratio: 1/1;
-  object-fit: cover;
-  width: 100%;
-  border-radius: 5px;
+	aspect-ratio: 1/1;
+	object-fit: cover;
+	width: 100%;
+	border-radius: 5px;
 }
 
 @media (min-width: 900px) {
-  .galleri1 {
-    grid-template-columns: repeat(3, 1fr);
-  }
-  #billede_2,
-  #billede_3,
-  #billede_4,
-  #billede_5 {
-    object-fit: cover;
-    aspect-ratio: unset;
-  }
+	.galleri1 {
+		grid-template-columns: repeat(3, 1fr);
+	}
+	#billede_2,
+	#billede_3,
+	#billede_4,
+	#billede_5 {
+		object-fit: cover;
+		aspect-ratio: unset;
+	}
 
-  #billede_2 {
-    grid-row: 1/3;
-    height: 100%;
-  }
-  #billede_3 {
-    grid-column: 2/4;
-  }
+	#billede_2 {
+		grid-row: 1/3;
+		height: 100%;
+	}
+	#billede_3 {
+		grid-column: 2/4;
+	}
 }
 
 .video2,
 .video1 {
-  aspect-ratio: 4/2;
-  line-height: 0.5rem;
+	aspect-ratio: 16/9;
+	line-height: 0.5rem;
 }
 .video3 {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 10px;
-  @media (min-width: 900px) {
-    grid-template-columns: 1fr 1fr;
-  }
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 10px;
+	@media (min-width: 900px) {
+		grid-template-columns: 1fr 1fr;
+	}
 }
 
 footer {
-  display: flex;
-  padding: 15px 0px;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  background-color: var(--lilla);
-  border-radius: 10px;
-  margin: 10px 15px;
-  color: white;
-  font-weight: 600;
+	display: flex;
+	padding: 15px 0px;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	background-color: var(--lilla);
+	border-radius: 10px;
+	margin: 10px 15px;
+	color: white;
+	font-weight: 600;
 }
